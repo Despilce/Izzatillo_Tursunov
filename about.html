@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <meta name="description" content="This page is About Me">
+    <meta name="author" content="Izzatillo Tursunov">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2077669b4f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <!--========================== EXTERNAL LINK =============================-->  
+            <a href="https://www.mdis.uz/"> <img src="img/logo.png" class="logo"></a>
+            
+            <!--========================== INTERNAL LINKS =============================-->
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="carousel.html">Carousel</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+
+            <!--========================== MENU BUTTONS =============================-->
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+    <div id="about">
+        <div class="conatiner">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/Me.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="abt">Curious student with the good computer skills, looking for a job in IT related companies such as Google, after finishing studies and graduating in this field.</p>
+    
+                    <div class="tab-titles">
+                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                         <p class="tab-links " onclick="opentab('experience')">Experience and Activities</p>
+                         <p class="tab-links" onclick="opentab('education')">Education and Certificates</p>
+                         <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Junior in Python and C</li>
+                            <li><span>Web Technologies</span><br>Junior in HTML, CSS, JavaScript and etc...</li>
+                            <li><span>Data Engineering</span><br>Junior in SQL</li>
+                            <li><span>Commuication</span><br>Active listener with good written and oral communication</li>
+                            <li><span>Languages</span><br>Uzbek - Native<br>English - C1<br>Russian - B2<br>Arabic - A1<br>Korean - A1</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Assistant to the Computer Repair Specialist</span><br>Learned the structure of computers:<br> -- How to fix them<br> -- How to Program</li>
+                            <li><span>Fast typing competition</span><br>Won the 1st place out of 26 competitors</li>
+                            <li><span>Chess competition</span><br>Won the 4th place out of 47 competitors</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor’s degree</span><br>MDIST, Tashkent<br>Computer Information Systems for Business</li>
+                            <li><span>English Advanced Certificate</span><br>• Speaking – 80%<br>• Listening – 84%<br>• Writing – 72%<br>• Reading – 76%<br>    Overall: 80</li>
+                            <li><span>Certificate by IT school</span><br>Champion on Fast typing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li><span>Health Caring</span><br>Morning run and workout<br>Eating Healthy</li>
+                            <li><span>Researching</span><br>Online researching, reading books</li>
+                            <li><span>Brain Storming</span><br>Playing Chess</li>
+                            <li><span>Taking Photos</span><br>Interested in Uniqueness</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="unique">
+                <a href="gallery.html">Click on the next page to see some of the photos I took.<i class="fa-sharp fa-solid fa-circle-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+
+<!--========================== LOGIC WORK OF MENU BUTTONS (FUNCTIONING) =============================-->
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

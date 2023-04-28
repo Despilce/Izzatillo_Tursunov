@@ -1,0 +1,47 @@
+[
+    {
+      "src": "img/1.jpg",
+      "alt": "Autumn (Fall)",
+      "caption": "Autumn (Fall)"
+    },
+    {
+        "src": "img/2.jpg",
+        "alt": "Old street memories",
+        "caption": "Old street memories"
+    },
+    {
+        "src": "img/3.jpg",
+        "alt": "Ramadan Moon",
+        "caption": "Ramadan Moon near MDIST"
+    },
+    {
+        "src": "img/4.jpg",
+        "alt": "When the Sun goes down",
+        "caption": "When the Sun goes down"
+    },
+    {
+        "src": "img/5.jpg",
+        "alt": "Something Beautiful",
+        "caption": "Something Beautiful"
+      },
+      {
+          "src": "img/6.jpg",
+          "alt": "Rare morning",
+          "caption": "Rare morning"
+      },
+      {
+          "src": "img/7.jpg",
+          "alt": "Sunset from courtyard",
+          "caption": "Sunset from courtyard"
+      },
+      {
+          "src": "img/8.jpg",
+          "alt": "Morning view from my dorm room",
+          "caption": "Morning view from my dorm room"
+      },
+      {
+        "src": "img/9.jpg",
+        "alt": "Night, Moon",
+        "caption": "Night, Moon"
+    }     
+  ]

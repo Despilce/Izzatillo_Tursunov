@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <meta name="description" content="This is a Gallery Page">
+    <meta name="author" content="Izzatillo Tursunov">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2077669b4f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <!--========================== EXTERNAL LINK =============================-->  
+            <a href="https://www.mdis.uz/"> <img src="img/logo.png" class="logo"></a>
+            
+            <h1 class="totaltitles">Gallery Page</h1>
+            <!--========================== INTERNAL LINKS =============================-->
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="carousel.html">Carousel</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+
+            <!--========================== MENU BUTTONS =============================-->
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+<div class="gallery-container"></div>
+<div id="modal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img id="modal-image" src="">
+</div>
+
+<script src="js/script.js"></script>
+
+<!--========================== LOGIC WORK OF MENU BUTTONS (FUNCTIONING) =============================-->
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>
