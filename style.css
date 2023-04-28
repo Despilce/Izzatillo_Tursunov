@@ -437,6 +437,10 @@ nav .fas{
   border-radius: 25%;
 }
 
+.carousel__button:hover{
+  background: #ff004f;
+}
+
 .carousel__button--left {
   left: -40px;
 }
